@@ -1,35 +1,33 @@
-class Manticore {
+class Securify {
     constructor() {
-        
+
     }
+
     async analysis(fileName) {
         const {
             spawn
         } = require("child_process");
+        
+        const securify = spawn("java", ["-jar","/securify/build/libs/securify.jar","-o","./result_data/securify.json","-fs",fileName]);
 
-        console.log("fileName :" +fileName)
-        
-        const manticore = spawn("manticore", [fileName]);
-        
-        await manticore.stdout.on("data", data => {
+        await securify.stdout.on("data", data => {
             console.log(`stdout: ${data}`);
         });
 
-        await manticore.stderr.on("data", data => {
+        await securify.stderr.on("data", data => {
             console.log(`stderr: ${data}`);
         });
 
-        await manticore.on('error', (error) => {
+        await securify.on('error', (error) => {
             console.log(`error: ${error.message}`);
             return false;
         });
 
-        await manticore.on("close", code => {
+        await securify.on("close", code => {
             console.log(`child process exited with code ${code}`);
-            return true;
+            return true;;
         });
     }
 }
 
-
-module.exports = Manticore;
+module.exports = Securify;

@@ -1,4 +1,4 @@
-class Manticore {
+class Smartcheck {
     constructor() {
         
     }
@@ -9,22 +9,22 @@ class Manticore {
 
         console.log("fileName :" +fileName)
         
-        const manticore = spawn("manticore", [fileName]);
+        const smartcheck = spawn("manticore", ["-p",fileName]);
         
-        await manticore.stdout.on("data", data => {
+        await smartcheck.stdout.on("data", data => {
             console.log(`stdout: ${data}`);
         });
 
-        await manticore.stderr.on("data", data => {
+        await smartcheck.stderr.on("data", data => {
             console.log(`stderr: ${data}`);
         });
 
-        await manticore.on('error', (error) => {
+        await smartcheck.on('error', (error) => {
             console.log(`error: ${error.message}`);
             return false;
         });
 
-        await manticore.on("close", code => {
+        await smartcheck.on("close", code => {
             console.log(`child process exited with code ${code}`);
             return true;
         });
@@ -32,4 +32,4 @@ class Manticore {
 }
 
 
-module.exports = Manticore;
+module.exports = Smartcheck;
