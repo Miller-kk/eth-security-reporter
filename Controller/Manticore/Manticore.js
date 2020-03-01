@@ -1,32 +1,35 @@
 class Manticore {
     constructor() {
-
+        
     }
-
-    analysis(fileName) {
+    async analysis(fileName) {
         const {
             spawn
         } = require("child_process");
-        
+
+        console.log("fileName :" +fileName)
+
         const manticore = spawn("manticore", [fileName]);
 
-        manticore.stdout.on("data", data => {
+        await manticore.stdout.on("data", data => {
             console.log(`stdout: ${data}`);
         });
 
-        manticore.stderr.on("data", data => {
+        await manticore.stderr.on("data", data => {
             console.log(`stderr: ${data}`);
         });
 
-        manticore.on('error', (error) => {
+        await manticore.on('error', (error) => {
             console.log(`error: ${error.message}`);
+            return false;
         });
 
-        manticore.on("close", code => {
+        await manticore.on("close", code => {
             console.log(`child process exited with code ${code}`);
+            return true;
         });
     }
 }
 
-module.exports = Manticore;
 
+module.exports = Manticore;

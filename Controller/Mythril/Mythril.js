@@ -3,27 +3,29 @@ class Mythril {
 
     }
 
-    analysis(fileName) {
+    async analysis(fileName) {
         const {
             spawn
         } = require("child_process");
         
         const myth = spawn("myth", [fileName]);
 
-        myth.stdout.on("data", data => {
+        await myth.stdout.on("data", data => {
             console.log(`stdout: ${data}`);
         });
 
-        myth.stderr.on("data", data => {
+        await myth.stderr.on("data", data => {
             console.log(`stderr: ${data}`);
         });
 
-        myth.on('error', (error) => {
+        await myth.on('error', (error) => {
             console.log(`error: ${error.message}`);
+            return false;
         });
 
-        myth.on("close", code => {
+        await myth.on("close", code => {
             console.log(`child process exited with code ${code}`);
+            return true;;
         });
     }
 }

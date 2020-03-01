@@ -1,0 +1,1304 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 173,
+              "length": 374,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "honeypot",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 842,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdraw(uint256,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call.value(this.balance)()",
+            "source_mapping": {
+              "start": 359,
+              "length": 39,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 17,
+              "ending_column": 56
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 173,
+                  "length": 374,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "honeypot",
+                    "source_mapping": {
+                      "start": 27,
+                      "length": 842,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_relative": "testset/honeypot.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_short": "testset/honeypot.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "external_calls"
+            }
+          },
+          {
+            "type": "node",
+            "name": "balanceOf[msg.sender] -= _amount",
+            "source_mapping": {
+              "start": 416,
+              "length": 32,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                14
+              ],
+              "starting_column": 17,
+              "ending_column": 49
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 173,
+                  "length": 374,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "honeypot",
+                    "source_mapping": {
+                      "start": 27,
+                      "length": 842,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_relative": "testset/honeypot.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_short": "testset/honeypot.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "underlying_type": "variables_written",
+              "variable_name": "balanceOf"
+            }
+          }
+        ],
+        "description": "Reentrancy in honeypot.withdraw(uint256,uint256) (testset/honeypot.sol#10-19):\n\tExternal calls:\n\t- msg.sender.call.value(this.balance)() (testset/honeypot.sol#13)\n\tState variables written after the call(s):\n\t- honeypot.balanceOf (testset/honeypot.sol#4) in balanceOf[msg.sender] -= _amount (testset/honeypot.sol#14)\n",
+        "markdown": "Reentrancy in [honeypot.withdraw(uint256,uint256)](testset/honeypot.sol#L10-L19):\n\tExternal calls:\n\t- [msg.sender.call.value(this.balance)()](testset/honeypot.sol#L13)\n\tState variables written after the call(s):\n\t- [honeypot.balanceOf](testset/honeypot.sol#L4) in [balanceOf[msg.sender] -= _amount](testset/honeypot.sol#L14)\n",
+        "id": "c827a62cae679aa93213d2ca3045f3fb598131795daf21faac3d53198afe46b7",
+        "check": "reentrancy-eth",
+        "impact": "High",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 173,
+              "length": 374,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "honeypot",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 842,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdraw(uint256,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call.value(this.balance)()",
+            "source_mapping": {
+              "start": 359,
+              "length": 39,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 17,
+              "ending_column": 56
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 173,
+                  "length": 374,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "honeypot",
+                    "source_mapping": {
+                      "start": 27,
+                      "length": 842,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_relative": "testset/honeypot.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_short": "testset/honeypot.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256,uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "honeypot.withdraw(uint256,uint256) (testset/honeypot.sol#10-19) ignores return value by msg.sender.call.value(this.balance)() (testset/honeypot.sol#13)\n",
+        "markdown": "[honeypot.withdraw(uint256,uint256)](testset/honeypot.sol#L10-L19) ignores return value by [msg.sender.call.value(this.balance)()](testset/honeypot.sol#L13)\n",
+        "id": "f2c6c86dedfe2ca9c3854439546e317230e5bb82eacf54da8afbbbac6075e409",
+        "check": "unchecked-lowlevel",
+        "impact": "Medium",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 173,
+              "length": 374,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "honeypot",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 842,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdraw(uint256,uint256)"
+            }
+          },
+          {
+            "type": "node",
+            "name": "msg.sender.call.value(this.balance)()",
+            "source_mapping": {
+              "start": 359,
+              "length": 39,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 17,
+              "ending_column": 56
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 173,
+                  "length": 374,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "honeypot",
+                    "source_mapping": {
+                      "start": 27,
+                      "length": 842,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_relative": "testset/honeypot.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_short": "testset/honeypot.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256,uint256)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Low level call in honeypot.withdraw(uint256,uint256) (testset/honeypot.sol#10-19):\n\t- msg.sender.call.value(this.balance)() (testset/honeypot.sol#13)\n",
+        "markdown": "Low level call in [honeypot.withdraw(uint256,uint256)](testset/honeypot.sol#L10-L19):\n\t- [msg.sender.call.value(this.balance)()](testset/honeypot.sol#L13)\n",
+        "id": "de6df3fdfcefe77531a39340312473eebb0a0d4ddf68501a9d03ff3465c2cf3f",
+        "check": "low-level-calls",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "honeypot",
+            "source_mapping": {
+              "start": 27,
+              "length": 842,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
+              ],
+              "starting_column": 1,
+              "ending_column": 2
+            },
+            "additional_fields": {
+              "target": "contract",
+              "convention": "CapWords"
+            }
+          }
+        ],
+        "description": "Contract honeypot (testset/honeypot.sol#2-39) is not in CapWords\n",
+        "markdown": "Contract [honeypot](testset/honeypot.sol#L2-L39) is not in CapWords\n",
+        "id": "4bddedacbe81f56dcdf3a1511f19320c435242c870b3142cf3ced0aec52b97fe",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_amount",
+            "source_mapping": {
+              "start": 191,
+              "length": 15,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                10
+              ],
+              "starting_column": 23,
+              "ending_column": 38
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 173,
+                  "length": 374,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "honeypot",
+                    "source_mapping": {
+                      "start": 27,
+                      "length": 842,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_relative": "testset/honeypot.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_short": "testset/honeypot.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter honeypot.withdraw(uint256,uint256)._amount (testset/honeypot.sol#10) is not in mixedCase\n",
+        "markdown": "Parameter [honeypot.withdraw(uint256,uint256)._amount](testset/honeypot.sol#L10) is not in mixedCase\n",
+        "id": "4251db60fe1e81c93a0cb9aec8d1c535dabd990788c5e636e3fa4623b79b36f8",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_num",
+            "source_mapping": {
+              "start": 208,
+              "length": 12,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                10
+              ],
+              "starting_column": 40,
+              "ending_column": 52
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "withdraw",
+                "source_mapping": {
+                  "start": 173,
+                  "length": 374,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "honeypot",
+                    "source_mapping": {
+                      "start": 27,
+                      "length": 842,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_relative": "testset/honeypot.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                      "filename_short": "testset/honeypot.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27,
+                        28,
+                        29,
+                        30,
+                        31,
+                        32,
+                        33,
+                        34,
+                        35,
+                        36,
+                        37,
+                        38,
+                        39
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "withdraw(uint256,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter honeypot.withdraw(uint256,uint256)._num (testset/honeypot.sol#10) is not in mixedCase\n",
+        "markdown": "Parameter [honeypot.withdraw(uint256,uint256)._num](testset/honeypot.sol#L10) is not in mixedCase\n",
+        "id": "4bfbd0b9ae259ebb8cdc6e0726ccee9f4307b08d160b660981118f48ffbc2c33",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "withdraw",
+            "source_mapping": {
+              "start": 173,
+              "length": 374,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "honeypot",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 842,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "withdraw(uint256,uint256)"
+            }
+          }
+        ],
+        "description": "withdraw(uint256,uint256) should be declared external:\n\t- honeypot.withdraw(uint256,uint256) (testset/honeypot.sol#10-19)\n",
+        "markdown": "withdraw(uint256,uint256) should be declared external:\n\t- [honeypot.withdraw(uint256,uint256)](testset/honeypot.sol#L10-L19)\n",
+        "id": "ae02f5f1d130ced48bcc928305be1221592e8d10959c4e595e9f80370007aab4",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "g",
+            "source_mapping": {
+              "start": 671,
+              "length": 142,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "honeypot",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 842,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "g()"
+            }
+          }
+        ],
+        "description": "g() should be declared external:\n\t- honeypot.g() (testset/honeypot.sol#26-32)\n",
+        "markdown": "g() should be declared external:\n\t- [honeypot.g()](testset/honeypot.sol#L26-L32)\n",
+        "id": "9a1477e1092dc0f9f88806f05a2f2951e519785ef3556c65452564018e146781",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "vuln",
+            "source_mapping": {
+              "start": 819,
+              "length": 48,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_relative": "testset/honeypot.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+              "filename_short": "testset/honeypot.sol",
+              "is_dependency": false,
+              "lines": [
+                34,
+                35,
+                36,
+                37,
+                38
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "honeypot",
+                "source_mapping": {
+                  "start": 27,
+                  "length": 842,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_relative": "testset/honeypot.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/honeypot.sol",
+                  "filename_short": "testset/honeypot.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "vuln()"
+            }
+          }
+        ],
+        "description": "vuln() should be declared external:\n\t- honeypot.vuln() (testset/honeypot.sol#34-38)\n",
+        "markdown": "vuln() should be declared external:\n\t- [honeypot.vuln()](testset/honeypot.sol#L34-L38)\n",
+        "id": "f5cf7e1d63797f502764ca3b667716c7c7dad5f91e1f8f292314a24e7f23a896",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

@@ -1,0 +1,535 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "inlow",
+            "source_mapping": {
+              "start": 25,
+              "length": 375,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+              ],
+              "starting_column": 1,
+              "ending_column": 2
+            }
+          },
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 103,
+              "length": 202,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "inlow",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 375,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_relative": "testset/itu.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_short": "testset/itu.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "inlow (testset/itu.sol#2-16) has incorrect ERC20 function interface:inlow.transfer(address,uint256) (testset/itu.sol#6-10)\n",
+        "markdown": "[inlow](testset/itu.sol#L2-L16) has incorrect ERC20 function interface:[inlow.transfer(address,uint256)](testset/itu.sol#L6-L10)\n",
+        "id": "a6edc70c1f7862717a4cb13b5fa65b424c26543285c6d76b06f4e17f106d0e5f",
+        "check": "erc20-interface",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "inlow",
+            "source_mapping": {
+              "start": 25,
+              "length": 375,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+              ],
+              "starting_column": 1,
+              "ending_column": 2
+            }
+          },
+          {
+            "type": "function",
+            "name": "fallback",
+            "source_mapping": {
+              "start": 315,
+              "length": 79,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                12,
+                13,
+                14
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "inlow",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 375,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_relative": "testset/itu.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_short": "testset/itu.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "fallback()"
+            }
+          }
+        ],
+        "description": "Contract locking ether found in :\n\tContract inlow (testset/itu.sol#2-16) has payable functions:\n\t - inlow.fallback() (testset/itu.sol#12-14)\n\tBut does not have a function to withdraw the ether\n",
+        "markdown": "Contract locking ether found in :\n\tContract [inlow](testset/itu.sol#L2-L16) has payable functions:\n\t - [inlow.fallback()](testset/itu.sol#L12-L14)\n\tBut does not have a function to withdraw the ether\n",
+        "id": "90393df48af4439523e29c80bec64a79af3affd89c14004f79161f17c952a8fb",
+        "check": "locked-ether",
+        "impact": "Medium",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.4.24",
+            "source_mapping": {
+              "start": 0,
+              "length": 24,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                1
+              ],
+              "starting_column": 1,
+              "ending_column": 25
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.4",
+                ".24"
+              ]
+            }
+          }
+        ],
+        "description": "Pragma version^0.4.24 (testset/itu.sol#1) allows old versions\n",
+        "markdown": "Pragma version[^0.4.24](testset/itu.sol#L1) allows old versions\n",
+        "id": "f5383a48a888d06fbc5fdfb82e8be1928fcccb1a73f30993797c7f05e1bd97f3",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "inlow",
+            "source_mapping": {
+              "start": 25,
+              "length": 375,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+              ],
+              "starting_column": 1,
+              "ending_column": 2
+            },
+            "additional_fields": {
+              "target": "contract",
+              "convention": "CapWords"
+            }
+          }
+        ],
+        "description": "Contract inlow (testset/itu.sol#2-16) is not in CapWords\n",
+        "markdown": "Contract [inlow](testset/itu.sol#L2-L16) is not in CapWords\n",
+        "id": "3e4fe535c708e4246bcf3186bb12b98c3c1ca8c984d78b8977f5a931b86aef52",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_to",
+            "source_mapping": {
+              "start": 121,
+              "length": 11,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 23,
+              "ending_column": 34
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 103,
+                  "length": 202,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_relative": "testset/itu.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_short": "testset/itu.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "inlow",
+                    "source_mapping": {
+                      "start": 25,
+                      "length": 375,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                      "filename_relative": "testset/itu.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                      "filename_short": "testset/itu.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter inlow.transfer(address,uint256)._to (testset/itu.sol#6) is not in mixedCase\n",
+        "markdown": "Parameter [inlow.transfer(address,uint256)._to](testset/itu.sol#L6) is not in mixedCase\n",
+        "id": "0db5fee8bae3f36a3d60e97da0c9e36eab5de66f7691c1f3854fafbb9944c166",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "_value",
+            "source_mapping": {
+              "start": 134,
+              "length": 14,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                6
+              ],
+              "starting_column": 36,
+              "ending_column": 50
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "transfer",
+                "source_mapping": {
+                  "start": 103,
+                  "length": 202,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_relative": "testset/itu.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_short": "testset/itu.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    6,
+                    7,
+                    8,
+                    9,
+                    10
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "inlow",
+                    "source_mapping": {
+                      "start": 25,
+                      "length": 375,
+                      "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                      "filename_relative": "testset/itu.sol",
+                      "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                      "filename_short": "testset/itu.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "transfer(address,uint256)"
+                }
+              }
+            },
+            "additional_fields": {
+              "target": "parameter",
+              "convention": "mixedCase"
+            }
+          }
+        ],
+        "description": "Parameter inlow.transfer(address,uint256)._value (testset/itu.sol#6) is not in mixedCase\n",
+        "markdown": "Parameter [inlow.transfer(address,uint256)._value](testset/itu.sol#L6) is not in mixedCase\n",
+        "id": "fe9bcb2b4645752a94e85eb6fe658b9a62361a68bfcb2a0b7523c9c486faa1ad",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "function",
+            "name": "transfer",
+            "source_mapping": {
+              "start": 103,
+              "length": 202,
+              "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_relative": "testset/itu.sol",
+              "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+              "filename_short": "testset/itu.sol",
+              "is_dependency": false,
+              "lines": [
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "starting_column": 5,
+              "ending_column": 6
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "inlow",
+                "source_mapping": {
+                  "start": 25,
+                  "length": 375,
+                  "filename_used": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_relative": "testset/itu.sol",
+                  "filename_absolute": "/Users/millerk/eth-security-reporter/testset/itu.sol",
+                  "filename_short": "testset/itu.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              },
+              "signature": "transfer(address,uint256)"
+            }
+          }
+        ],
+        "description": "transfer(address,uint256) should be declared external:\n\t- inlow.transfer(address,uint256) (testset/itu.sol#6-10)\n",
+        "markdown": "transfer(address,uint256) should be declared external:\n\t- [inlow.transfer(address,uint256)](testset/itu.sol#L6-L10)\n",
+        "id": "abe6b643b51c9295455e727ee7eaaec800a5d0eb37478968e5830968d807dc43",
+        "check": "external-function",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

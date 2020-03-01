@@ -2,28 +2,30 @@ class Slither {
     constructor() {
 
     }
-
-    analysis(fileName) {
+    
+    async analysis(fileName) {
         const {
             spawn
         } = require("child_process");
         
-        const slither = spawn("slither", [fileName]);
+        const slither = spawn("slither",["--json","./result_data/slither.json",fileName]);
 
-        slither.stdout.on("data", data => {
+        await slither.stdout.on("data", data => {
             console.log(`stdout: ${data}`);
         });
 
-        slither.stderr.on("data", data => {
+        await slither.stderr.on("data", data => {
             console.log(`stderr: ${data}`);
         });
 
-        slither.on('error', (error) => {
+        await slither.on('error', (error) => {
             console.log(`error: ${error.message}`);
+            return false;
         });
 
-        slither.on("close", code => {
+        await slither.on("close", code => {
             console.log(`child process exited with code ${code}`);
+            return true;
         });
     }
 }
