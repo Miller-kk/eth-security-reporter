@@ -10,9 +10,9 @@ class Manticore {
         console.log("fileName :" +fileName)
         
         const manticore = spawn("manticore", [fileName]);
-        
+
         await manticore.stdout.on("data", data => {
-            console.log(`stdout: ${data}`);
+            //console.log(`stdout: ${data}`);
         });
 
         await manticore.stderr.on("data", data => {

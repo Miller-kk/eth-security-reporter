@@ -14,15 +14,15 @@ class Mythx {
         const mythx = spawn("mythx", ["--access-token", token, "--format", "json", "analyze", fileName]);
 
         await mythx.stdout.on("data", data => {
-            console.log(`stdout: ${data}`);
+            //console.log(`stdout: ${data}`);
         });
 
         await mythx.stderr.on("data", data => {
-            console.log(`stderr: ${data}`);
+            //console.log(`stderr: ${data}`);
         });
 
         await mythx.on('error', (error) => {
-            console.log(`error: ${error.message}`);
+            //console.log(`error: ${error.message}`);
             return false;
         });
 

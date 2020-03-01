@@ -12,7 +12,7 @@ class Smartcheck {
         const smartcheck = spawn("manticore", ["-p",fileName]);
         
         await smartcheck.stdout.on("data", data => {
-            console.log(`stdout: ${data}`);
+            //console.log(`stdout: ${data}`);
         });
 
         await smartcheck.stderr.on("data", data => {

@@ -1,0 +1,1 @@
+/usr/local/bin/manticore /Users/millerk/eth-security-reporter/testset/itu.sol

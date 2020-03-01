@@ -11,7 +11,7 @@ class Slither {
         const slither = spawn("slither",["--json","./result_data/slither.json",fileName]);
 
         await slither.stdout.on("data", data => {
-            console.log(`stdout: ${data}`);
+            //console.log(`stdout: ${data}`);
         });
 
         await slither.stderr.on("data", data => {

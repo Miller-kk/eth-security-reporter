@@ -8,10 +8,10 @@ class Mythril {
             spawn
         } = require("child_process");
         
-        const myth = spawn("myth", [fileName]);
+        const myth = spawn("myth", ["-o","./result_data/mythril.json","-i",fileName]);
 
         await myth.stdout.on("data", data => {
-            console.log(`stdout: ${data}`);
+            //console.log(`stdout: ${data}`);
         });
 
         await myth.stderr.on("data", data => {

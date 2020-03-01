@@ -1,0 +1,4 @@
+- Potentially reading uninitialized storage -
+  Contract: 0x1ef48bb4af5d1613dd7aba69ae2d4d5615406562  EVM Program counter: 0x153
+  Snippet:
+4  mapping (address => uint256) public balanceOf

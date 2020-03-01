@@ -1,0 +1,79 @@
+{
+    "/eth-security-reporter/testset/itu.sol:inlow": {
+      "version": "v0-154-g51ba124",
+      "results": {
+        "DAO": {
+          "violations": [],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "DAOConstantGas": {
+          "violations": [],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "LockedEther": {
+          "violations": [],
+          "warnings": [],
+          "safe": [
+            1
+          ],
+          "conflicts": []
+        },
+        "MissingInputValidation": {
+          "violations": [
+            3,
+            5
+          ],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "RepeatedCall": {
+          "violations": [],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "TODAmount": {
+          "violations": [],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "TODReceiver": {
+          "violations": [],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "UnhandledException": {
+          "violations": [],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "UnrestrictedEtherFlow": {
+          "violations": [],
+          "warnings": [],
+          "safe": [],
+          "conflicts": []
+        },
+        "UnrestrictedWrite": {
+          "violations": [
+            8
+          ],
+          "warnings": [],
+          "safe": [
+            7
+          ],
+          "conflicts": []
+        }
+      },
+      "securifyErrors": {
+        "errors": []
+      }
+    }
+  }

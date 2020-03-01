@@ -11,15 +11,15 @@ class Securify {
         const securify = spawn("java", ["-jar","/securify/build/libs/securify.jar","-o","./result_data/securify.json","-fs",fileName]);
 
         await securify.stdout.on("data", data => {
-            console.log(`stdout: ${data}`);
+            //console.log(`stdout: ${data}`);
         });
 
         await securify.stderr.on("data", data => {
-            console.log(`stderr: ${data}`);
+            //console.log(`stderr: ${data}`);
         });
 
         await securify.on('error', (error) => {
-            console.log(`error: ${error.message}`);
+            //console.log(`error: ${error.message}`);
             return false;
         });
 

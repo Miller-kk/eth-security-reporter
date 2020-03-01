@@ -1,0 +1,16 @@
+- Unsigned integer overflow at SUB instruction -
+  Contract: 0x50cf8c32c8867967a6fad89bc54da485ec617023  EVM Program counter: 0x1ec
+  Snippet:
+8  balanceOf[msg.sender] -= _value
+- Potentially reading uninitialized storage -
+  Contract: 0x50cf8c32c8867967a6fad89bc54da485ec617023  EVM Program counter: 0x236
+  Snippet:
+9  balanceOf[_to] += _value
+- Unsigned integer overflow at ADD instruction -
+  Contract: 0x50cf8c32c8867967a6fad89bc54da485ec617023  EVM Program counter: 0x238
+  Snippet:
+9  balanceOf[_to] += _value
+- Unsigned integer overflow at SUB instruction -
+  Contract: 0x50cf8c32c8867967a6fad89bc54da485ec617023  EVM Program counter: 0x19a
+  Snippet:
+7  balanceOf[msg.sender] - _value >= 0
