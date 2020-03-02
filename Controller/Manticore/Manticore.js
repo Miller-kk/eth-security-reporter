@@ -9,7 +9,7 @@ class Manticore {
 
         console.log("fileName :" +fileName)
         
-        const manticore = spawn("manticore", [fileName]);
+        const manticore = spawn("manticore", ["--workspace", "manticore", "--workspace.dir", "result_data", fileName]);
 
         await manticore.stdout.on("data", data => {
             //console.log(`stdout: ${data}`);

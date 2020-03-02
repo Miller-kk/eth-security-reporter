@@ -36,20 +36,19 @@ async function integrationAnalysis(filePath) {
     await osiris.analysis(filePath);
     await mythril.analysis(filePath);
     await manticore.analysis(filePath);
+    const mythxInfo = await mp();
+    await pprint("mythx", mythxInfo)
+    const slitherInfo = await slp();
+    await pprint("slither", slitherInfo)
+    const securifyInfo = await sp();
+    await pprint("securify", securifyInfo)
+
   }
 
 }
 
 integrationAnalysis(filePath);
 
-const mythxInfo = mp();
-pprint("mythx", mythxInfo)
-const slitherInfo = slp();
-pprint("slither", slitherInfo)
-const securifyInfo = sp();
-pprint("securify", securifyInfo)
-
 result["mythx"] = mythxInfo;
 result["slither"] = slitherInfo;
 result["securify"] = securifyInfo;
-
